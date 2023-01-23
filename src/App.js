@@ -1,12 +1,19 @@
 import './App.css';
-import Bio from './components/Bio';
-import Login from './components/Login'
+import Bio from './components/Auth/Bio';
+import Login from './components/Auth/Login'
+import Products from './components/Products/Products';
+import Sale from './components/Sale';
 
 const App = () => {
   return (
+    // login page
+    // <div className="h-screen md:flex">
+    //   <Bio />
+    //   <Login />
+    // </div>
+
     <div className="h-screen md:flex">
-      <Bio />
-      <Login />
+      <Sale />
     </div>
   );
 }
