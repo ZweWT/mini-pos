@@ -1,8 +1,8 @@
 import './App.css';
-import Bio from './components/Auth/Bio';
-import Login from './components/Auth/Login'
-import Products from './components/Products/Products';
-import Sale from './components/Sale';
+// import Bio from './components/Auth/Bio';
+// import Login from './components/Auth/Login'
+
+import Sale from './components/Sale/Sale';
 
 const App = () => {
   return (
@@ -12,9 +12,7 @@ const App = () => {
     //   <Login />
     // </div>
 
-    <div className="h-screen md:flex">
       <Sale />
-    </div>
   );
 }
 

@@ -18,11 +18,9 @@ const DUMMY_CATEGORIES = [
 const CategoryList = () => {
     const categories = DUMMY_CATEGORIES.map( category => <CategoryItem key={category.id} category={category} />);
     return (
-        <section>
-            <ul>
-                {categories}
-            </ul>
-        </section>
+        <div className="mt-5 flex flex-row px-5">
+            {categories}
+        </div>
     )
 }
 

@@ -6,9 +6,7 @@ const Products = () => {
     return (
         <Fragment>
             <CategoryList />
-            <main>
-                <ProductList />
-            </main>
+            <ProductList />
         </Fragment>
     )
 }
