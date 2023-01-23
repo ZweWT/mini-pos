@@ -10,7 +10,6 @@ const defaultCartState = {
 
 const cartReducer = (state, action) => {
     if (action.type === "ADD") {
-        console.log('here');
         const updatedSubTotal = state.subTotal + action.item.cost
         const updatedTax = updatedSubTotal * 5 / 100
         const updatedTotal = updatedSubTotal + updatedTax
@@ -97,6 +96,7 @@ const CartProvider = props => {
     const [cartState, dispatchCartAction] = useReducer(cartReducer, defaultCartState)
 
     const addItemToCartHandler = (item) => {
+        console.log("dispatch add")
         dispatchCartAction({type: "ADD", item: item })
     }
 

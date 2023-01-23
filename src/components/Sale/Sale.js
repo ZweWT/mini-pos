@@ -1,4 +1,4 @@
-import CartProvider from "../../store/CartProvider"
+// import CartProvider from "../../store/CartProvider"
 import Cart from "./Cart/Cart"
 import Header from "./Header"
 import Products from "./Products/Products"
@@ -6,7 +6,7 @@ import Products from "./Products/Products"
 //add header component here
 const Sale = () => {
     return (
-      <CartProvider>
+      // <CartProvider>
         <div className="container mx-auto px-5 bg-white">
       <div className="flex lg:flex-row flex-col-reverse shadow-lg">
       
@@ -34,7 +34,7 @@ const Sale = () => {
       </div>
     </div>
 
-      </CartProvider>
+      // </CartProvider>
     )
 }
 
